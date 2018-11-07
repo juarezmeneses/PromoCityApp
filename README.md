@@ -23,3 +23,6 @@
 
 ## Sobre
 ![print8](https://user-images.githubusercontent.com/3067971/48167369-a55ac900-e2d2-11e8-9809-0783970044ef.jpeg)
+
+## Detalhe do Cupom
+![print9](https://user-images.githubusercontent.com/3067971/48168183-7abe3f80-e2d5-11e8-92eb-052a7358c467.jpeg)

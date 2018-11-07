@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PromoCity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">PromoCity</string>
+    <string name="nav_header_subtitle">contato.promocity@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="descricao_sistema">O PromoCity é uma solução composta por um serviço web de registro de lojas e promoções baseadas em localização, bem como uma aplicação móvel onde o usuário se registra e configura seus interesses em promoções de artigos de lojas em geral, de acordo com suas preferências, para que na medida que fique em um raio de proximidade de 100m ele receba promoções das lojas cadastradas no serviço.
+    O usuário ao entrar no raio de alcance de uma promoção, recebe um cupom de desconto, que ele deverá confirmar o aceite, e este cupom ficará armazenado na aplicação móvel de forma que ele possa resgatar a promoção na loja apresentando o cupom e a loja fará a validação via QR code do cupom.
+
+    </string>
+
+
+</resources>

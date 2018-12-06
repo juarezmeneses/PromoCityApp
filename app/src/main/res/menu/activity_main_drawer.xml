@@ -17,6 +17,10 @@
             android:icon="@drawable/ic_beenhere"
             android:title="Meus Cupons" />
         <item
+            android:id="@+id/nav_amigos"
+            android:icon="@drawable/ic_contacts_black_24dp"
+            android:title="Meus Amigos" />
+        <item
             android:id="@+id/nav_configuracoes"
             android:icon="@drawable/ic_menu_manage"
             android:title="Configurações" />
@@ -36,6 +40,11 @@
                 android:id="@+id/nav_sobre"
                 android:icon="@drawable/ic_menu_info"
                 android:title="Sobre" />
+            <item
+                android:id="@+id/nav_sair"
+                android:icon="@drawable/ic_keyboard_backspace_black_24dp"
+                android:title="Sair" />
+
         </menu>
     </item>
 

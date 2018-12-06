@@ -1,4 +1,4 @@
-package br.ufc.ubicomp.promocity;
+package br.ufc.ubicomp.promocity.utils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -12,6 +12,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import br.ufc.ubicomp.promocity.R;
+import br.ufc.ubicomp.promocity.model.Cupom;
+import br.ufc.ubicomp.promocity.view.DetalheCupomActivity;
+import br.ufc.ubicomp.promocity.view.MeusCuponsActivity;
 
 public class MeusCuponsAdapter extends ArrayAdapter<Cupom> {
 
@@ -38,7 +43,7 @@ public class MeusCuponsAdapter extends ArrayAdapter<Cupom> {
         textViewNome.setText(itemPosicao.getNome());
 
         TextView textViewDescricao = (TextView) convertView.findViewById(R.id.tvDescricao);
-        textViewDescricao.setText(itemPosicao.getDescricao());
+        textViewDescricao.setText("");
 
         TextView textViewCodigo = (TextView) convertView.findViewById(R.id.tvCodigo);
         textViewCodigo.setText(itemPosicao.getCodigo());
@@ -50,10 +55,15 @@ public class MeusCuponsAdapter extends ArrayAdapter<Cupom> {
 
                 Intent intent = new Intent(context, DetalheCupomActivity.class);
                 intent.putExtra("flag", flag);
-                intent.putExtra("id",itemPosicao.getId());
-                intent.putExtra("nome",itemPosicao.getNome());
+                intent.putExtra("idCupom",itemPosicao.getId());
+                intent.putExtra("nomeCupom",itemPosicao.getNome());
                 intent.putExtra("descricao",itemPosicao.getDescricao());
                 intent.putExtra("codigo",itemPosicao.getCodigo());
+                intent.putExtra("idStore",itemPosicao.getIdStore());
+                intent.putExtra("flagAtivar",true);
+                intent.putExtra("id", MeusCuponsActivity.usuarioLogin.getId());
+                intent.putExtra("email", MeusCuponsActivity.usuarioLogin.getEmail());
+                intent.putExtra("nome", MeusCuponsActivity.usuarioLogin.getNome());
 
                 context.startActivity(intent);
             }

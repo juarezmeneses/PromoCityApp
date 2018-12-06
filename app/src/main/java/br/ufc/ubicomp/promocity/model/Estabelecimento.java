@@ -1,6 +1,8 @@
-package br.ufc.ubicomp.promocity;
+package br.ufc.ubicomp.promocity.model;
 
 import java.util.ArrayList;
+
+import br.ufc.ubicomp.promocity.model.Promocao;
 
 public class Estabelecimento {
     private int id;
@@ -41,7 +43,6 @@ public class Estabelecimento {
 
     public void setLatitude(int latitude) {
         this.latitude = latitude;
-
     }
 
     public double getLongetude() {
@@ -76,7 +77,6 @@ public class Estabelecimento {
         this.listaDePromocoes = listaDePromocoes;
     }
 
-
     public void addPromocao(Promocao promocao) {
         this.listaDePromocoes.add(promocao);
     }
@@ -88,7 +88,6 @@ public class Estabelecimento {
     public void removerTodasAsPromocoes() {
         this.listaDePromocoes.clear();
     }
-
 
     public String getEmail() {
         return email;

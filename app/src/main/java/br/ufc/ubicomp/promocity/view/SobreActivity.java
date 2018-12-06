@@ -1,4 +1,4 @@
-package br.ufc.ubicomp.promocity;
+package br.ufc.ubicomp.promocity.view;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.widget.TextView;
+
+import br.ufc.ubicomp.promocity.R;
 
 public class SobreActivity extends AppCompatActivity {
 
@@ -24,8 +26,6 @@ public class SobreActivity extends AppCompatActivity {
         }
         String version = pInfo.versionName;
 
-        //int verCode = pInfo.versionCode;
-
         mWebView = (WebView) findViewById(R.id.webview);
 
         String text = "<html><body>"
@@ -41,8 +41,6 @@ public class SobreActivity extends AppCompatActivity {
 
         TextView textViewVersao = (TextView) findViewById(R.id.tvVersao);
         textViewVersao.setText("Versão: "+version);
-
-
 
     }
 }

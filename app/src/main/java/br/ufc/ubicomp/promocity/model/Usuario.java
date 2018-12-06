@@ -1,4 +1,4 @@
-package br.ufc.ubicomp.promocity;
+package br.ufc.ubicomp.promocity.model;
 
 import java.util.ArrayList;
 
@@ -10,6 +10,10 @@ public class Usuario {
     private String email;
     private String senha;
     private ArrayList<Promocao> listaDePromocoes;
+
+    public Usuario(){
+
+    }
 
     public Usuario(int id, double latitude, double longetude, String nome, String email, String senha){
         this.id = id;
@@ -25,7 +29,7 @@ public class Usuario {
         return id;
     }
 
-    public void setSenha(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -33,7 +37,7 @@ public class Usuario {
         return latitude;
     }
 
-    public void setLatitude(int latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
 
     }
@@ -42,7 +46,7 @@ public class Usuario {
         return longetude;
     }
 
-    public void setLongetude(int longetude) {
+    public void setLongetude(double longetude) {
         this.longetude = longetude;
     }
 

@@ -1,7 +1,9 @@
-package br.ufc.ubicomp.promocity;
+package br.ufc.ubicomp.promocity.model;
 
 import java.util.ArrayList;
 import java.util.Date;
+
+import br.ufc.ubicomp.promocity.model.Cupom;
 
 public class Promocao {
 
@@ -13,15 +15,17 @@ public class Promocao {
     private Date dataFim;
     private ArrayList<Cupom> listaDeCupons;
 
+    private int idEstabelecimento;
+
     public Promocao(){
 
     }
 
-
-    public Promocao(int id, String nome, String descricao){
+    public Promocao(int id, String nome, String descricao, int idEstabelecimento){
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
+        this.idEstabelecimento = idEstabelecimento;
         this.listaDeCupons = new ArrayList<>();
 
     }
@@ -32,6 +36,14 @@ public class Promocao {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getIdEstabelecimento() {
+        return idEstabelecimento;
+    }
+
+    public void setIdEstabelecimento(int idEstabelecimento) {
+        this.idEstabelecimento = idEstabelecimento;
     }
 
     public String getNome() {
@@ -74,8 +86,6 @@ public class Promocao {
         this.dataFim = dataFim;
     }
 
-
-    ///
     public ArrayList<Cupom> getListaDeCupons() {
         return listaDeCupons;
     }

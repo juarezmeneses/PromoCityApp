@@ -1,4 +1,4 @@
-package br.ufc.ubicomp.promocity;
+package br.ufc.ubicomp.promocity.utils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -12,6 +12,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import br.ufc.ubicomp.promocity.R;
+import br.ufc.ubicomp.promocity.model.Promocao;
+import br.ufc.ubicomp.promocity.view.DetalhePromocaoActivity;
 
 public class PromocoesAdapter extends ArrayAdapter<Promocao> {
 
@@ -32,14 +36,13 @@ public class PromocoesAdapter extends ArrayAdapter<Promocao> {
         convertView = LayoutInflater.from(this.context).inflate(R.layout.item_lista_promocoes,null);
         final View layout = convertView;
 
-
         final AlertDialog.Builder builder = new AlertDialog.Builder(this.context);
 
         TextView textViewNome = (TextView) convertView.findViewById(R.id.tvNome);
         textViewNome.setText(itemPosicao.getNome());
 
         TextView textViewDescricao = (TextView) convertView.findViewById(R.id.tvDescricao);
-        textViewDescricao.setText(itemPosicao.getDescricao());
+        textViewDescricao.setText("");
 
         Button buttonVisualizar = (Button)convertView.findViewById(R.id.buttonVisualizar);
         buttonVisualizar.setOnClickListener(new View.OnClickListener() {
@@ -51,11 +54,11 @@ public class PromocoesAdapter extends ArrayAdapter<Promocao> {
                 intent.putExtra("id",itemPosicao.getId());
                 intent.putExtra("nome",itemPosicao.getNome());
                 intent.putExtra("descricao",itemPosicao.getDescricao());
+                intent.putExtra("idEstabelecimento",itemPosicao.getIdEstabelecimento());
 
                 context.startActivity(intent);
             }
         });
-
         return convertView;
 
     }
@@ -64,7 +67,5 @@ public class PromocoesAdapter extends ArrayAdapter<Promocao> {
     {
         ((Activity) this.context).finish();
     }
-
-
 
 }

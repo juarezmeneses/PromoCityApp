@@ -4,16 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.DetalhePromocaoActivity">
+    tools:context=".view.TodosUsuariosActivity">
 
     <ListView
+
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/listViewCuponsDaPromocao"
+        android:id="@+id/listViewTodosUsuarios"
         android:layout_alignParentTop="true"
+
         android:divider="@null"
         android:dividerHeight="1dp"
+
         android:layout_centerHorizontal="true"
+
         />
 
 </android.support.constraint.ConstraintLayout>

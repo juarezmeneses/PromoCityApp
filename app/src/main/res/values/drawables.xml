@@ -12,4 +12,9 @@
     <item name="ic_menu_input_add" type="drawable">@android:drawable/ic_input_add</item>
     <item name="ic_beenhere" type="drawable">@drawable/ic_beenhere_black_24dp</item>
     <item name="ic_menu_view" type="drawable">@android:drawable/ic_menu_view</item>
+    <item name="ic_menu_contact" type="drawable">@drawable/ic_contacts_black_24dp</item>
+    <item name="ic_remove" type="drawable">@drawable/ic_remove_red_24dp</item>
+    <item name="ic_remove2" type="drawable">@drawable/ic_remove_circle_outline_red_24dp</item>
+    <item name="ic_add_contact" type="drawable">@drawable/ic_person_add_white_24dp</item>
+
 </resources>

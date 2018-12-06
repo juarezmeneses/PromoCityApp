@@ -6,12 +6,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-
-
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
 
     android:background="@drawable/side_background_login"
     android:layout_gravity="center"
-    tools:context=".view.LoginActivity">
+    tools:context=".view.CadastrarUsuarioActivity">
 
     <!-- Login progress -->
     <ProgressBar
@@ -20,7 +22,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_margin="15dp"
         android:visibility="gone" />
 
     <ScrollView
@@ -28,51 +29,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- A CardView that contains a TextView -->
-        <android.support.v7.widget.CardView
-            xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_view"
-            android:layout_gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/colorPrimary"
-            card_view:cardUseCompatPadding="true"
-            card_view:cardPreventCornerOverlap="true"
-            card_view:cardCornerRadius="5dp"
-            card_view:cardElevation="8dp"
-            android:layout_margin="18dp"
-
-
-
-            >
-
-            <TextView
-                android:id="@+id/tvlogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Login"
-                android:gravity="top|center"
-                android:textSize="28dp"
-                android:textColor="#FFF"
-                android:layout_marginTop="10dp"
-
-                android:shadowRadius="2"
-                android:shadowColor="@color/black"
-                android:shadowDx="1"
-                android:shadowDy="1"
-                />
-
-
         <LinearLayout
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="50dp"
             android:orientation="vertical">
 
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
+                <AutoCompleteTextView
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="User Name"
+                    android:textColor="#FFF"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
+            </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -102,7 +79,6 @@
                     android:hint="@string/prompt_password"
                     android:imeActionId="6"
                     android:imeActionLabel="@string/action_sign_in_short"
-
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
                     android:textColor="#FFF"
@@ -112,30 +88,16 @@
             </android.support.design.widget.TextInputLayout>
 
             <Button
-                android:id="@+id/email_sign_in_button"
+                android:id="@+id/register_button"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in"
+                android:text="REGISTER"
 
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/prompt_password"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="Register"
-                android:textColor="#FFF"
-                android:maxLines="1"
-                android:singleLine="true" />
-
-
-
         </LinearLayout>
-    </android.support.v7.widget.CardView>
     </ScrollView>
+
 </LinearLayout>

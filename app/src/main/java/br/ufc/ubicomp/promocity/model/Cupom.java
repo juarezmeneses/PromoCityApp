@@ -1,4 +1,4 @@
-package br.ufc.ubicomp.promocity;
+package br.ufc.ubicomp.promocity.model;
 
 public class Cupom {
 
@@ -6,6 +6,7 @@ public class Cupom {
     private String nome;
     private String descricao;
     private String codigo;
+    private int idStore;
 
     public Cupom(){
 
@@ -51,7 +52,12 @@ public class Cupom {
         this.codigo = codigo;
     }
 
+    public int getIdStore() {
+        return idStore;
+    }
 
-
+    public void setIdStore(int idStore) {
+        this.idStore = idStore;
+    }
 
 }

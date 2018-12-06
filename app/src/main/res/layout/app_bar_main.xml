@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -22,12 +22,74 @@
 
     <include layout="@layout/content_main" />
 
-    <android.support.design.widget.FloatingActionButton
+    <!--<android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="@dimen/standard_45"
+        android:layout_height="@dimen/standard_45"
+        android:layout_gravity="bottom|end"
+
+        android:scaleType="center"
+        android:tint="@android:color/white"
+        app:elevation="24dp"
+        app:borderWidth="0dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="70dp"
+        app:srcCompat="@drawable/ic_contacts_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="@dimen/standard_45"
+        android:layout_height="@dimen/standard_45"
+        android:layout_gravity="bottom|end"
+
+        android:scaleType="center"
+        android:tint="@android:color/white"
+        app:elevation="12dp"
+        app:borderWidth="0dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="70dp"
+        app:srcCompat="@drawable/ic_beenhere" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="@dimen/standard_45"
+        android:layout_height="@dimen/standard_45"
+        android:layout_gravity="bottom|end"
+
+        android:scaleType="center"
+        app:elevation="12dp"
+        app:borderWidth="0dp"
+        android:tint="@android:color/white"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="70dp"
+
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+
+        android:scaleType="center"
+        android:tint="@android:color/white"
+        app:elevation="24dp"
+        app:borderWidth="0dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="65dp"
+
+        app:srcCompat="@android:drawable/ic_input_add" />
 
 </android.support.design.widget.CoordinatorLayout>
